@@ -7,14 +7,14 @@ let fullName = "Tafadzwa Chingore";
 
 let currentYear = 2023;
 
-let profilePicture = "C:\Users\USER\OneDrive\Documents\cse121b\w02-task\images\profile.jpg"
+let profilePicture = "images/profile.jpg";
 
 
 
 /* Step 3 - Element Variables */
-const nameElement = getElementById("name");
+const nameElement = document.getElementById("name");
 
-const foodElement = getElementById('favoriteFoods');
+const foodElement = document.getElementById("favoriteFoods");
 
 const yearElement = document.querySelector("#year");
 
@@ -26,7 +26,7 @@ nameElement.innerHTML = "<strong>${fullName}</strong>";
 
 //Use the textContent property to set the value of the element to the value of the variable currentYear.
 
-image.Element.setAttribute('src', profilePicture);
+imageElement.setAttribute('src', profilePicture);
 
 /* Step 5 - Array*/
 const favoriteFoods = ['sweet potato', 'pumpkin porridge', 'round nuts'];
