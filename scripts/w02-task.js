@@ -42,3 +42,5 @@ foodElement.innerHTML += '<br>${favoriteFoods}';
 favoriteFoods.pop([2]);
 
 foodElement.innerHTML += '<br>${favoriteFoods}';
+
+// Tafadzwa Chingore

@@ -67,3 +67,5 @@ getTemples();
 document.querySelector('#sortBy').addEventListener('change', () => {
     sortBy(templeList);
   });
+
+  //Tafadzwa Chingore

@@ -93,5 +93,5 @@ myProfile.hobbies.forEach(hobbies => {
         document.getElementById("places-lived").appendChild(dd);
       });
 
-
+// Tafadzwa Chingore
 

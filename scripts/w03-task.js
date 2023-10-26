@@ -91,3 +91,5 @@ document.querySelector('#sumOfArray').innerHTML = numbersArray.reduce((sum, numb
 document.querySelector('#multiplied').innerHTML = numbersArray.map(number => number * 2);
 
 /* Output Sum of Multiplied by 2 Array */
+
+// Tafadzwa Chingore
