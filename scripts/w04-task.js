@@ -49,20 +49,14 @@ document.querySelector('#name').textContent = myProfile.name;
 
 /* Photo with attributes */
 
-document.querySelector('#photo').imgContent = myProfile.photo;
-
-const person = {
-    name: "John Doe"
-};
- 
-assignNameAsAlt("photo", person);
+document.querySelector('#photo').src = myProfile.photo;
 
 /* Favorite Foods List*/
 
 myProfile.favoriteFoods.forEach(food => {
     let li = document.createElement('li');
     li.textContent = food;
-    document.querySelector('#favoriteFoods').appendChild(li)
+    document.querySelector('#favorite-foods').appendChild(li)
 });
 
 /* Hobbies List */
@@ -76,16 +70,28 @@ myProfile.hobbies.forEach(hobbies => {
 /* Places Lived DataList */
 
 // Create <dt> element
-    const dtElement = document.createElement('dt');
-    dtElement.textContent = place;
+    //const dtElement = document.createElement('dt');
+    //dtElement.textContent = place;
  
     // Create <dd> element
-    const ddElement = document.createElement('dd');
+    //const ddElement = document.createElement('dd');
     ddElement.textContent = length;
  
     // Append <dt> and <dd> elements to the <dl> element
-    dlElement.appendChild(dtElement);
-    dlElement.appendChild(ddElement);
+    //dlElement.appendChild(dtElement);
+    //dlElement.appendChild(ddElement);
+
+    myProfile.placesLived.forEach((place) => {
+        // Create an HTML <dt> element and put its place property in the <dt> element.
+        const dt = document.createElement("dt");
+        dt.textContent = place.place;
+        // Create an HTML <dd> element and put its length property in the <dd> element
+        const dd = document.createElement("dd");
+        dd.textContent = place.length;
+        // Append the HTML <dt> and <dd> elements created above to the HTML <dl> element with an ID of places-lived.
+        document.getElementById("places-lived").appendChild(dt);
+        document.getElementById("places-lived").appendChild(dd);
+      });
 
 
 

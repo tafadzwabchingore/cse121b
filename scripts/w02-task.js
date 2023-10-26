@@ -12,24 +12,26 @@ let profilePicture = "images/profile.jpg";
 
 
 /* Step 3 - Element Variables */
-const nameElement = document.getElementById("name");
+const nameElement = document.getElementById('name');
 
-const foodElement = document.getElementById("favoriteFoods");
+const foodElement = document.getElementById('favoriteFoods');
 
-const yearElement = document.querySelector("#year");
+const yearElement = document.querySelector('#year');
 
 let imageElement = profilePicture;
 
 /* Step 4 - Adding Content */
 
-nameElement.innerHTML = "<strong>${fullName}</strong>";
+nameElement.innerHTML = '<strong>${fullName}</strong>';
 
 //Use the textContent property to set the value of the element to the value of the variable currentYear.
 
 imageElement.setAttribute('src', profilePicture);
 
+imageElement.setAttribute('alt', 'Profile image of ${fullName}');
+
 /* Step 5 - Array*/
-const favoriteFoods = ['sweet potato', 'pumpkin porridge', 'round nuts'];
+const favoriteFoods = ["sweet potato", "pumpkin porridge", "round nuts"];
 
 let food2 = "rice with peanutbutter";
 
